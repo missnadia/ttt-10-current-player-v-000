@@ -2,8 +2,8 @@
 def turn_count(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
   counter = 0
   board.each do |turn|
-    puts counter
-    (board[turn] == "X") || (board[turn] == "O") ? puts counter += 1 : counter += 0
+    puts "#{counter}"
+    (board[turn] == "X") || (board[turn] == "O") ? counter += 1 : puts "#{counter}"
   end
 end
 
