@@ -8,5 +8,5 @@ def turn_count(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
 end
 
 def current_player(board)
-  (turn_count(board) % 2) == 0 ? puts "It is X's turn." : "It is O's turn."
+  (turn_count(board) % 2) == 0 ? puts "X" : "O"
 end
