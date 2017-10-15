@@ -5,7 +5,6 @@ def turn_count(board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"])
   end
   puts counter
 end
-end
 
 def current_player(board)
   (turn_count(board) % 2) == 0 ? puts "X" : puts "O"
