@@ -8,8 +8,6 @@ def turn_count(board)
 end
 
 def current_player(board)
-  def turn_count(board)
-  end
   num = turn_count(board)
   if num.to_i % 2 == 0
     puts "X"
