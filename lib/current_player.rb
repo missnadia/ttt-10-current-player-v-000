@@ -5,8 +5,7 @@ def turn_count
   board.each do |turn|
     puts "#{counter}"
   end
-    (turn == "X") || (turn == "O") ? counter += 1 : counter += 0
-  end
+    (turn == "X") || (turn == "O") ? counter += 1 : counter += 
 end
 
 def current_player(board)
