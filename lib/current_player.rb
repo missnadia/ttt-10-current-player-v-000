@@ -8,7 +8,13 @@ def turn_count(board)
 end
 
 def current_player(board)
-  num.even? || num == 0 ? "X" : "O"
+  def turn_count(board)
+  end
+  if turn_count(board).to_i % 2 == 0
+    puts "X"
+  else
+    puts "O"
+  end
 end
 
 board = ["O"," "," "," ","X"," "," "," ","X"]
