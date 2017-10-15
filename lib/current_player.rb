@@ -9,6 +9,7 @@ end
 def current_player(board)
   num = turn_count(board)
   num.to_i % 2 == 0 ? "X" : "O"
+  num.to_i % 3 == 0 ? "O" : "X"
 end
 
 board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
