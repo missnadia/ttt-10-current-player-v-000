@@ -4,18 +4,17 @@ def turn_count(board)
     (turn == "X") || (turn == "O") ? counter += 1 : counter += 0
   end
     puts "#{counter}"
-    num = counter
 end
 
 def current_player(board)
   num = turn_count(board)
   if num.to_i % 2 == 0
-    puts "X"
+    "X"
   else
-    puts "O"
+    "O"
   end
 end
 
-board = ["O"," "," "," ","X"," "," "," ","X"]
+board = [" "," "," "," "," "," "," "," "," "]
 turn_count(board)
 current_player(board)
