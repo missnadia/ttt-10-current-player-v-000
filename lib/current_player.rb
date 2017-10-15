@@ -4,6 +4,7 @@ def turn_count(board)
     (turn == "X") || (turn == "O") ? counter += 1 : counter += 0
   end
     puts counter
+    count = counter
 end
 
 def current_player(board)
