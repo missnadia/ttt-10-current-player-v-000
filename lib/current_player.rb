@@ -13,4 +13,3 @@ end
 
 board = ["O"," "," "," ","X"," "," "," ","X"]
 turn_count(board)
-
