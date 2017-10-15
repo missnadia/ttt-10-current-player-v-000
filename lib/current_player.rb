@@ -3,7 +3,7 @@ def turn_count(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
   counter = 0
   board.each do |turn|
     puts "#{counter}"
-    (board[turn] == "X") || (board[turn] == "O") ? counter += 1 : counter += 0
+      (turn == "X") || (turn == "O") ? counter += 1 : counter += 0
   end
 end
 
