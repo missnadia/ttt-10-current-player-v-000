@@ -1,6 +1,5 @@
 
-def turn_count
-  board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
+def turn_count(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
   counter = 0
   board.each do |turn|
     puts "#{counter}"
@@ -9,5 +8,5 @@ def turn_count
 end
 
 def current_player(board)
-  turn_count(board) % 2 == 0 ? "X" : "O"
+  turn_count(board) % 2 == 0 ? puts "It is X's turn." : "It is O's turn."
 end
