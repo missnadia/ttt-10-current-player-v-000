@@ -1,9 +1,9 @@
-board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
-def turn_count(board)
+
+def turn_count(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
   counter = 0
   board.each do |turn|
     puts counter
-    (turn == "X") || (turn == "O") ? counter += 1 : counter += 0
+    (board[turn] == "X") || (board[turn] == "O") ? counter += 1 : counter += 0
   end
 end
 
